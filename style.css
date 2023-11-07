@@ -27,7 +27,7 @@ a{
     color: black;
 }
 .container{
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
     background-color: var(--second-color);
     color: var(--black-color);
@@ -37,7 +37,7 @@ a{
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    width: 1500px;
+    width: 1300px;
     margin-left: 100px
 }
 
