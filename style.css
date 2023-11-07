@@ -41,6 +41,25 @@ a{
     margin-left: 100px
 }
 
+.header-top{
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+}
+
+.header-top ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+    color: gray;
+
+}
+
+.header-top ul li:hover{
+    color: var(--bg-secondban);
+}
+
 .main{
     height: 100vh;
    
@@ -74,7 +93,7 @@ a img{
 
 .main-nav-item{
     margin-left: 20px;
-
+    margin-top: 30px;
 }
 
 .fa-magnifying-glass{
