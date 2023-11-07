@@ -53,7 +53,7 @@ a{
     column-gap: 20px;
     position: relative;
     color: gray;
-
+    
 }
 
 .header-top ul li:hover{
@@ -233,7 +233,8 @@ a img{
     display: flex;
     justify-content: center;
     column-gap: 100px;
-    background-image: linear-gradient(to top left, #DA0C81, #FECDA6);
+    background-image: url(assets/Product_Background_Product_Background_ILk_Gun_202311061125.webp);
+    background-repeat: no-repeat;
     margin-top: 100px; 
     height: 500px;
     width: 1200px;
