@@ -39,6 +39,7 @@ a{
     align-items: center;
     width: 1300px;
     margin-left: 100px
+    
 }
 
 .header-top{
@@ -73,11 +74,21 @@ a img{
 .search-box {
     display: block;
     margin: 0 auto;
-    width: 35%;
+    width: 50%;
     border-radius: 10px;
-    height: 40px;
+    height: 50px;
+    border: none;
+    background-color: antiquewhite;
+    outline: none;
+    text-align: center;
     
   }
+
+  .search-box::-webkit-search-cancel-button,
+  .search-box::-webkit-search-clear-button{
+    display: none;
+  }
+
 
 .header-logo {
     font-size: 30px;
@@ -89,17 +100,22 @@ a img{
     justify-content: space-between;       
     /* gap: 30px; */
     column-gap: 30px;
+    
 }
 
 .main-nav-item{
     margin-left: 20px;
     margin-top: 30px;
+    transition-duration: .4s all;
 }
 
+
+.main-nav-item:hover a{
+    transition: 0.3s var(--bg-secondban0); 
+}
 .fa-magnifying-glass{
-    margin-top: 3px;
-    left: 55%;
-    position: absolute;
+    position: relative;
+    right: 140px;
 }
 .main-nav-items a{
     color: var(--text-color);
@@ -161,10 +177,11 @@ a img{
     border-radius: 50%;
     background-size: cover;
     width: 50px;
-    transform: scale(1.2);
+
     height: 50px;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 /* .slide img:hover{
@@ -191,21 +208,23 @@ a img{
 .banner-widgets{
     display: flex;
     text-align: center;
-    width: 1200px;
+    width: 110%;
     justify-content: space-evenly;
     
 }
 
 .banner-list-item{
-    border: 1px solid var(--bg-thrban);
     font-size: 30px;
     color: var(--text-thrban);
     background-color: var(--bg-thrban);
     border-radius: 10px;
     font-weight: 500;
-    padding: 20px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 
 
 .first{
@@ -225,9 +244,14 @@ a img{
     color: var(--bg-secondban);
     background-color: var(--text-secondban);
     opacity: 0.6;
-    padding-left: 100px;
-    padding-right: 100px;
+ 
 }
+
+.fourth{
+    color: var(--text-bannerpr);
+    background-color: var(--bg-banner);
+}
+
 
 .favorite-items-list{
     display: flex;
@@ -236,16 +260,18 @@ a img{
     background-image: url(assets/Product_Background_Product_Background_ILk_Gun_202311061125.webp);
     background-repeat: no-repeat;
     margin-top: 100px; 
-    height: 500px;
-    width: 1200px;
+    height: 30vw;
+    width: 80vw;
+    
+    
 }
 
 .item img{
-    border: 1px solid black;
+    border-radius: 5px;
     background-position: center ;
     background-size: cover;
     height: 50%;
-    width: 80%;
+    width: 100%;
     margin-top: 60px;
     
 }
@@ -253,3 +279,4 @@ a img{
 .item-inner{
     color: var(--bg-primary);
 }
+
