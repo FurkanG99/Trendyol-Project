@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary-color:#FF6C22;
+    --text-color: #040D12;
+    --bg-secondary: #FECDA6;
+    --bg-primary: #FFFF;
+    --bg-banner: #A6CF98;
+    --text-bannerpr: #557C55;
+    --bg-secondban:#FF9130;
+    --text-secondban: #FF5B22;
+    --bg-thrban:#FF7676;
+    --text-thrban: #DA0C81;
+
+}
+
+
+.cat-path {
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    align-items: center;
+}
+.cat-path span{
+    color: var(--bg-secondban);
+    font-size: 20px;
+    font-weight: bold;
+}
