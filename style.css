@@ -384,6 +384,7 @@ main {
     background-image: url(/images/Product_Background_Product_Background_ILk_Gun_202311061125.webp);
     border-radius: 6px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    
 }
 
 .product-slider-head {
@@ -404,7 +405,8 @@ main {
     display: flex;
     justify-content: space-between;
     column-gap: 20px;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    
 }
 
 .product-slider-content-item {
@@ -417,6 +419,7 @@ main {
     flex-direction: column;
     align-items: center;
     font-size: 14px;
+    animation: slide-animation 10s infinite;
 }
 
 
@@ -448,16 +451,11 @@ main {
     float: inline-start;
 }
 
-.crossedText {
+.crossed-text {
     font-size: 14px;
     text-decoration: line-through;
     color: gray;
 }
-
-
-
-
-
 
 footer {
     padding: 50px 0 0 0;
