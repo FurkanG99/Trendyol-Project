@@ -1,118 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <title>Trendyol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-   
-    <div class="container">
-        <div class="header">
-            <a href="#" class="header-logo"><img src="assets/Trendyol_online.png" alt=""></a>
-           
-            <input type="search" name="" id="search-box" class="search-box" placeholder="Aramak İstediğiniz Ürünü Yazınız."> <i class="fa-solid fa-magnifying-glass" style="color: #ffa200;"></i>
-            <nav class="main-nav">
-                <div class="header-top">
-                    <ul>
-                        <li>İndirim Kuponları</li>
-                        <li>Trendyolda Satış Yap</li>
-                        <li>Hakkımızda</li>
-                        <li>İletişim</li>
-                    </ul>
-                </div>
-                <ul class="main-nav-items">
-                    <li class="main-nav-item"><i class="fa-regular fa-user icon" style="color: #000000;"><a href="/">Giriş Yap</a></i></li>
-                    <li class="main-nav-item"><i class="fa-sharp fa-regular fa-heart icon" style="color: #000000;"><a href="/">Favorilerim</a></i></li>
-                    <li class="main-nav-item"><i class="fa-solid fa-cart-shopping icon" style="color: #000000;"><a href="/">Siparişlerim</a></i></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-list">
-            <a href="/">Kadın</a>
-            <a href="/">Erkek</a>
-            <a href="/">Anne&Çocuk</a>
-            <a href="/">Ev&Mobilya</a>
-            <a href="/">Süper Market</a>
-            <a href="/">Kozmetik</a>
-            <a href="/">Ayakkabı&Çanta</a>
-            <a href="/">Elektronik</a>
-            <a href="/">Spor&Outdoor</a>
-            <a href="/">Çok Satanlar</a>
-            <a href="/">Flaş Ürünler</a>
-        </div>
-        <hr style="border: 0.5px solid gray;">
-        <main class="main">
-            <div class="slider-container">
-                <div class="slider">
-                    <div class="slide">
-                        <img src="assets/defacto.png" alt="Resim 1">
-                        <p>Defacto</p>
-                    </div>
-                    <div class="slide">
-                        <img src="assets/AppleLogo.jpeg" alt="Resim 2">
-                        <p>Apple</p>
-                    </div>
-                    <div class="slide">
-                        <img src="assets/indir.png" alt="Resim 3">
-                        <p>Philips</p>
-                    </div>
-                    <div class="slide">
-                        <img src="assets/karaca.png" alt="Resim 3">
-                        <p>Karaca</p>
-                    </div>
-                    <div class="slide">
-                        <img src="assets/mavi.png" alt="Resim 3">
-                        <p>Mavi</p>
-                    </div>
-                    <div class="slide">
-                        <img src="assets/samsung.png" alt="Resim 3">
-                        <p>Samsung</p>
-                    </div>
-                </div>
 
-            
-                <div class="banner-widgets">
-                    <div class="banner-widget">
-                     
-                     <a href="/" class="banner-list-item first">Sepete En Çok Eklenenler</a>   
-                    </div>
-                    <div class="banner-widget">
-                        <a href="/" class="banner-list-item second">En Çok Öne Çıkanlar</a>
-                    </div>
-                    <div class="banner-widget">
-                        <a href="/" class="banner-list-item third">Flaş Ürünler</a>
-                    </div>
-                    <div class="banner-widget">
-                        <a href="/" class="banner-list-item fourth">Kampanya Detayları</a>
+<body>
+    <div class="container">
+        <header>
+            <div class="headerMain">
+                <div class="headerTop">
+                    <div class="wrapper">
+                        <ul>
+                            <li><a href="/">İndirim Kuponlarım</a></li>
+                            <li><a href="/"> Trendyol'da Satış Yap</a></li>
+                            <li><a href="/">Hakkımızda</a></li>
+                            <li><a href="/">Yardım & Destek</a></li>
+                        </ul>
                     </div>
                 </div>
-            
-                <div class="favorite-items-list" style="position: relative;">
-                    <h2 style="display: inline-block; position: absolute; color: #FFFF; font-weight: normal; left: 30px; top: 10px;">Çok Satan Ürünler</h2>
-                    <h3 style="display: flex; flex-direction: row; align-items: end; justify-content: space-between; position: absolute; left: 1080px; color: #FFFF; font-size: 14px; top: 10px;">Tüm Ürünler!</h3>
-                    <div class="second-item item">
-                        <a href=""><img src="assets/trendyol-item2.jpg" alt="">
-                         <p class="item-inner">Bargello ı22 </p>
-                        </a>
+                <div class="stickyHeader">
+                    <div class="stickyHeader-wrap">
+                        <div>
+                            <a href="" class="logo tittle" id="logo"><img
+                                    src="https://cdn.dsmcdn.com/web/production/ty-cumhuriyet-100-logo.svg"
+                                    alt="Trendyol"></a>
+                        </div>
+                        <div class="input">
+                            <input type="search" maxlength="50" size="80"
+                                placeholder="Aradığınız ürün, kategori veya marka yazınız">
+                            <button><i class="fa-solid fa-magnifying-glass" style="color: #FF671B;"></i></button>
+                        </div>
+                        <div class="account-navbar">
+                            <div>
+                                <ul>
+                                    <li><a href=""><i class="fa-regular fa-user"></i> Giriş Yap</a></li>
+                                    <li><a href=""><i class="fa-regular fa-heart"></i> Favorilerim</a></li>
+                                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sepetim</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="third-item item">
-                        <a href=""><img src="assets/trendyol-item3.jpg" alt=""></a>
-                    </div>
-                    <div class="fourth-item item">
-                        <a href=""><img src="assets/trendyol-item4.jpg" alt=""></a>
-                    </div>
-                    <div class="five-item item">
-                        <a href=""><img src="assets/trendyol-item5.jpg" alt=""></a>
-                    </div>
-                    
+
                 </div>
-                <div class="bottom-list"></div>
-            
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Kadın</a></li>
+                            <li><a href="/">Erkek</a></li>
+                            <li><a href="/">Anne & Çocuk</a></li>
+                            <li><a href="/">Ev & Mobilya</a></li>
+                            <li><a href="/">Süpermarket</a></li>
+                            <li><a href="/">Kozmetik</a></li>
+                            <li><a href="/">Ayakkabı & Çanta</a></li>
+                            <li><a href="/">Elektronik</a></li>
+                            <li><a href="/">Spor&Outdoor</a></li>
+                            <li><a href="/">Çok Satanlar <span>Yeni</span></a></li>
+                            <li><a href="/">Flaş Ürünler <span>Yeni</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+        </header>
+        <hr class="hr1">
+        <main>
+            <div class="sliderList">
+                <ul>
+                    <li><a href="/"><img src="/assets/firsat_urunleri.png" alt="Fırsat Ürünleri">
+                            <div>Tüm
+                                Ürünler</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/secili_urunler.png" alt="">
+                            <div>Kaçırma!</div>
+                        </a></li>
+                    <li><a href="/"><img for="" src="/assets/sen_de_al.png" alt="">
+                            <div>Sen De Al!</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/sana_ozel.png" alt="">
+                            <div>Sana Özel</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/kredi_karti.png" alt="">
+                            <div>Kredi Kartı</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/kurumsal.png" alt="">
+                            <div>Kurumsal</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/sansli_cekilis.png" alt="">
+                            <div>Şanslı Çekiliş</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/kredi_karti.png" alt="">
+                            <div>Krediler</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/apple.png" alt="">
+                            <div>Apple</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/trendyolMilla.png" alt="">
+                            <div>TrendyolMilla</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/pull_n_bear.png" alt="">
+                            <div>Pull & Bear</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/philips.png" alt="">
+                            <div>Philips</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/xiaomi.png" alt="">
+                            <div>Xiaomi</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/samsung.png" alt="">
+                            <div>Samsung</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/karaca.png" alt="">
+                            <div>Karaca</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/roborock.png" alt="">
+                            <div>Roborock</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/stradivarius.png" alt="">
+                            <div>Stradivarius</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/defacto.png" alt="">
+                            <div>DeFacto</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/adidas.png" alt="">
+                            <div>adidas</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/puma.png" alt="">
+                            <div>Puma</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/derimod.png" alt="">
+                            <div>Derimod</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/tefal.png" alt="">
+                            <div>TEFAL</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/bershka.png" alt="">
+                            <div>Bershka</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/dyson.png" alt="">
+                            <div>DYSON</div>
+                        </a></li>
+                    <li><a href="/"><img src="/assets/arzum.png" alt="">
+                            <div>Arzum</div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="mainCards">
+                <ul>
+                    <li id="card-li1"><a href="/">Sepete En Çok Eklenenler</a></li>
+                    <li id="card-li2"><a href="/">En Çok Öne Çıkanlar</a></li>
+                    <li id="card-li3"><a href="/">Flaş Ürünler</a></li>
+                    <li id="card-li4"><a href="/">Kampanya detayları</a></li>
+                </ul>
+            </div>
+            <div class="productCards">
+                <ul class="productList">
+                    <div class="productList-item-wrap">
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108040453_AyakkabiCantadaAvantajliUrunler2353800mobile.jpg"
+                                    alt=""><button>Ayakkabı & Çanta'da Avantajlı Ürünler</button></a>
+
+                        </li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1032/pimWidgetApi/mobile_20231108041307_TrendyolCollectionAradiginTumUrunler23532912353291mobile.jpg"
+                                    alt=""><button>Trendyol Collection - Aradığın Tüm Ürünler</button></a></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1034/pimWidgetApi/mobile_20231108040723_626012TrendyolCollectionModaninyenisezonucikti2352514mobile.jpg"
+                                    alt=""></a><button>Trendyol Collection - Modanın yeni sezonu çıktı!</button></li>
+                    </div>
+                    <div class="productList-item-wrap">
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1032/pimWidgetApi/mobile_20231108041333_Son30GununEnDusukFiyatliAyakkabiCantalari2353802mobile.jpg"
+                                    alt=""></a><button>Son 30 Günün En Düşük Fiyatlı Ayakkabı & Çantaları</button></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108041303_MobilyaninVazgecilmezleri2354971mobile.jpg"
+                                    alt=""></a><button>Mobilyanın Vazgeçilmezleri - Son 30 Gün!</button></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1034/pimWidgetApi/mobile_20231108041214_AradiginAyakkabiMarkalari2355246mobile.jpg"
+                                    alt=""></a><button>Aradığın Ayakkabı Markaları</button></li>
+                    </div>
+                    <div class="productList-item-wrap">
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108041013_EnCokFavorilenenler2353809mobile.jpg"
+                                    alt=""></a><button type="button">En Çok Favorilenenler</button></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108041640_KadinGiyimSuperAlisverisGunleriAvantajliUrunler2354754mobile.jpg"
+                                    alt=""></a><button>Kadın Giyim Süper Alışveriş Günleri - Avantajlı Ürünler</button>
+                        </li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1032/pimWidgetApi/mobile_20231108040754_IhtiyaclarinIcinBinlerceUrun2354906mobile.jpg"
+                                    alt=""></a><button>İhtiyaçların İçin Binlerce Ürün</button></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="productSlider">
+                <ul class="productSlider-head">
+                    <li>
+                        <h2>Çok Satan Ürünler</h2>
+                    </li>
+                    <li><a href="#">Tüm ürünler!</a></li>
+                </ul>
+                <ul class="productSlider-content">
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty983/product/media/images/20230808/19/401323368/61116150/1/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty951/product/media/images/20230617/10/386381714/157605346/2/2_org_zoom.png"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty712/product/media/images/20230203/15/272837558/212232897/1/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty581/product/media/images/20221028/12/203343789/325466179/1/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty1028/product/media/images/prod/PIM/20231101/07/6ed23b6b-20e0-43ea-8c60-831d777dc1c6/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty993/product/media/images/prod/SPM/PIM/20230901/10/a8e23484-d649-3be8-8d08-d712b05a4bb2/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty554/product/media/images/20221005/16/186537483/589841358/1/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty949/product/media/images/20230612/13/385007856/123408601/4/4_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty508/product/media/images/20220815/16/160229309/56696304/2/2_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+                    <li class="productSlider-content-item"><a href="">
+                            <img src="https://cdn.dsmcdn.com/ty1009/product/media/images/prod/SPM/PIM/20231005/15/827227af-1a7d-343f-b893-940ace69b97b/1_org.jpg"
+                                alt=""></a>
+                        <a><span>Bargello</span> 122 Oriental Edp 50 Ml Kadın Parfüm 8691841304622</a>
+                        <a class="slider-price-alert"><i class="fa-solid fa-arrow-trend-down"></i> Son 30 Günün En
+                            Düşük Fiyatı!</a>
+                        <a class="priceLeft"><span class="crossedText">230 TL</span>140 TL</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="productCards">
+                <ul class="productList">
+                    <div class="productList-item-wrap">
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108040453_AyakkabiCantadaAvantajliUrunler2353800mobile.jpg"
+                                    alt=""><button>Ayakkabı & Çanta'da Avantajlı Ürünler</button></a>
+
+                        </li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1032/pimWidgetApi/mobile_20231108041307_TrendyolCollectionAradiginTumUrunler23532912353291mobile.jpg"
+                                    alt=""><button>Trendyol Collection - Aradığın Tüm Ürünler</button></a></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1034/pimWidgetApi/mobile_20231108040723_626012TrendyolCollectionModaninyenisezonucikti2352514mobile.jpg"
+                                    alt=""></a><button>Trendyol Collection - Modanın yeni sezonu çıktı!</button></li>
+                    </div>
+                    <div class="productList-item-wrap">
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1032/pimWidgetApi/mobile_20231108041333_Son30GununEnDusukFiyatliAyakkabiCantalari2353802mobile.jpg"
+                                    alt=""></a><button>Son 30 Günün En Düşük Fiyatlı Ayakkabı & Çantaları</button></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108041303_MobilyaninVazgecilmezleri2354971mobile.jpg"
+                                    alt=""></a><button>Mobilyanın Vazgeçilmezleri - Son 30 Gün!</button></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1034/pimWidgetApi/mobile_20231108041214_AradiginAyakkabiMarkalari2355246mobile.jpg"
+                                    alt=""></a><button>Aradığın Ayakkabı Markaları</button></li>
+                    </div>
+                    <div class="productList-item-wrap">
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108041013_EnCokFavorilenenler2353809mobile.jpg"
+                                    alt=""></a><button type="button">En Çok Favorilenenler</button></li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1033/pimWidgetApi/mobile_20231108041640_KadinGiyimSuperAlisverisGunleriAvantajliUrunler2354754mobile.jpg"
+                                    alt=""></a><button>Kadın Giyim Süper Alışveriş Günleri - Avantajlı Ürünler</button>
+                        </li>
+                        <li class="productList-item"><a href="#"><img
+                                    src="https://cdn.dsmcdn.com/ty1032/pimWidgetApi/mobile_20231108040754_IhtiyaclarinIcinBinlerceUrun2354906mobile.jpg"
+                                    alt=""></a><button>İhtiyaçların İçin Binlerce Ürün</button></li>
+                    </div>
+                </ul>
+            </div>
+
         </main>
-        <div class="footer">Footer</div>
+        <footer>
+            <div class="footerList-wrap">
+                <div class="footerList">
+                    <div class="footerList-trendyol"><a href="">Trendyol</a>
+                        <ul>
+                            <li><a href="/">Biz Kimiz</a></li>
+                            <li><a href="/">Kariyer</a></li>
+                            <li><a href="/">İletişim</a></li>
+                            <li><a href="/">Trendyol'da Satış Yap</a></li>
+                            <li id="footerLi">Güvenli Alışveriş</li>
+                            <li id="footerIcon1"><img src="/assets/footer-icon1.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="footerList-about"><a href="">About us</a>
+                        <ul>
+                            <li><a href="/">Who we are</a></li>
+                            <li><a href="/">Careers</a></li>
+                            <li><a href="/">Contact us</a></li>
+                            <li><a href="/">Sustainability</a></li>
+                            <li id="footerLi">Mobil Uygulamalar</li>
+                            <li id="footerIcon1"><img src="/assets/footer-icon2.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="footerList-kampanya"><a href="">Kampanyalar</a>
+                        <ul>
+                            <li><a href="/">Aktif Kampanyalar</a></li>
+                            <li><a href="/">Elite Üyelik</a></li>
+                            <li><a href="/">Hediye Fikirleri</a></li>
+                            <li><a href="/">Trendyol Fırsatları</a></li>
+                            <li id="footerLi">Sosyal Medya
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerList-yardım"><a href="">Yardım</a>
+                        <ul>
+                            <li><a href="/">Sıkça Sorulan Sorular</a></li>
+                            <li><a href="/">Canlı Yardım</a></li>
+                            <li><a href="/">Nasıl İade Edebilirim</a></li>
+                            <li><a href="/">İşlem Rehberi</a></li>
+                            <li id="footerLi2"><a href="#">Ülke Değiştir</a></li>
+                            <li id="footerIcon1"><img src="/assets/footer-icon3.png" alt=""></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">&copy; Furkan Gültekin tarafından Wissen Akademie BAU Bright FS-2310-13
+                sınıfının projesi olarak tasarlanmıştır. </div>
+        </footer>
+    </div>
 </body>
+
 </html>
