@@ -13,6 +13,16 @@
 
 }
 
+body{
+    height: 100%;
+}
+
+.content-urun-list{
+    height: 100%;
+    width: 1200px;
+    margin-left: 100px;
+}
+
 
 .cat-path {
     margin-left: 30px;
@@ -26,4 +36,52 @@
     color: var(--bg-secondban);
     font-size: 20px;
     font-weight: bold;
+}
+
+
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 20px;
+    position: fixed;
+    height: 70%;
+    overflow-y: scroll;
+    top: 200px;
+}
+.accordion-item {
+    /* border: 1px solid #ddd; */
+    margin-bottom: 5px;
+  }
+
+  .accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  .accordion-content {
+    display: block;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100px;
+    margin-bottom: 5px
+  }
+
+  .accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-content-2{
+    display: none;
+}
+
+.main-content{
+    width: 60%;
+    display: flex;
+}
+.main-content h3{
+    flex-direction: column;
+    
 }

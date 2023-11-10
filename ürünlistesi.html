@@ -1,81 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/urunlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
     <header>
-    <div class="main-header">
-        <div class="header-top">
-            <div class="wrapper">
-                <ul>
-                    <li><a href="/">İndirim Kuponlarım</a></li>
-                    <li><a href="/"> Trendyol'da Satış Yap</a></li>
-                    <li><a href="/">Hakkımızda</a></li>
-                    <li><a href="/">Yardım & Destek</a></li>
-                </ul>
+        <div class="main-header">
+            <div class="header-top">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="/">İndirim Kuponlarım</a></li>
+                        <li><a href="/"> Trendyol'da Satış Yap</a></li>
+                        <li><a href="/">Hakkımızda</a></li>
+                        <li><a href="/">Yardım & Destek</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="sticky-header ">
-            <div class="sticky-header-wrap">
-                <div>
-                    <a href="" class="logo tittle" id="logo"><img
-                            src="https://cdn.dsmcdn.com/web/production/ty-cumhuriyet-100-logo.svg"
-                            alt="Trendyol"></a>
-                </div>
-                <div class="input">
-                    <input type="search" maxlength="50" size="80"
-                        placeholder="Aradığınız ürün, kategori veya marka yazınız">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #FF671B;"></i>
-                </div>
-                <div class="account-navbar">
+            <div class="sticky-header ">
+                <div class="sticky-header-wrap">
                     <div>
-                        <ul>
-                            <li><a href=""><i class="fa-regular fa-user"></i> Giriş Yap</a></li>
-                            <li><a href=""><i class="fa-regular fa-heart"></i> Favorilerim</a></li>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sepetim</a></li>
-                        </ul>
+                        <a href="" class="logo tittle" id="logo"><img
+                                src="https://cdn.dsmcdn.com/web/production/ty-cumhuriyet-100-logo.svg"
+                                alt="Trendyol"></a>
+                    </div>
+                    <div class="input">
+                        <input type="search" maxlength="50" size="80"
+                            placeholder="Aradığınız ürün, kategori veya marka yazınız">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #FF671B;"></i>
+                    </div>
+                    <div class="account-navbar">
+                        <div>
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-user"></i> Giriş Yap</a></li>
+                                <li><a href=""><i class="fa-regular fa-heart"></i> Favorilerim</a></li>
+                                <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sepetim</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="/">Kadın</a></li>
+                        <li><a href="/">Erkek</a></li>
+                        <li><a href="/">Anne & Çocuk</a></li>
+                        <li><a href="/">Ev & Mobilya</a></li>
+                        <li><a href="/">Süpermarket</a></li>
+                        <li><a href="/">Kozmetik</a></li>
+                        <li><a href="/">Ayakkabı & Çanta</a></li>
+                        <li><a href="/">Elektronik</a></li>
+                        <li><a href="/">Spor&Outdoor</a></li>
+                        <li><a href="/">Çok Satanlar <span>Yeni</span></a></li>
+                        <li><a href="/">Flaş Ürünler <span>Yeni</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <hr class="hr">
+    <div class="content-urun-list">
+        <div class="cat-path">
+            <a href="/">Ana Sayfa</a>
+            <span>></span>
+            <a href="/">Erkek</a>
+            <span>></span>
+            <a href="/">Ayakkabı</a>
+            <span>></span>
+            <a href="#" style="font-weight: 900;">Spor Ayakkabı</a>
+        </div>
+<div class="main-content">
+    <h2>"Erkek Spor Ayakkabı" araması için 100.000+ sonuç listeleniyor</h2>
+</div>
 
-        </div>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="/">Kadın</a></li>
-                    <li><a href="/">Erkek</a></li>
-                    <li><a href="/">Anne & Çocuk</a></li>
-                    <li><a href="/">Ev & Mobilya</a></li>
-                    <li><a href="/">Süpermarket</a></li>
-                    <li><a href="/">Kozmetik</a></li>
-                    <li><a href="/">Ayakkabı & Çanta</a></li>
-                    <li><a href="/">Elektronik</a></li>
-                    <li><a href="/">Spor&Outdoor</a></li>
-                    <li><a href="/">Çok Satanlar <span>Yeni</span></a></li>
-                    <li><a href="/">Flaş Ürünler <span>Yeni</span></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-<hr class="hr">
-    <div class="cat-path">
-        <a href="/">Ana Sayfa</a>
-        <span>></span>
-        <a href="/">Erkek</a>
-        <span>></span>
-        <a href="/">Ayakkabı</a>
-        <span>></span>
-        <a href="#" style="font-weight: 900;">Spor Ayakkabı</a>
-    </div>
-        <div class="main-page">
-            
-        </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">İlgili Kategoriler <i class="fa-solid fa-arrow-up"
+                        style="color: #ff822e;"></i></div>
+                <div class="accordion-content">
+                    <ul>
+                        <ul>
+                            <li><a href="#">Sneaker</a></li>
+                            <li><a href="#">Outdoor Ayakkabı</a></li>
+                            <li><a href="#">Yürüyüş Ayakkabısı</a></li>
+                            <li><a href="#">Koşu & Antrenman Ayakkabısı</a></li>
+                            <li><a href="#">Basketbol Ayakkabısı</a></li>
+                            <li><a href="#">Fitness Ayakkabısı</a></li>
+                            <li><a href="#">Halı Saha Ayakkabısı</a></li>
+                            <li><a href="#">Krampon</a></li>
+                            <li><a href="#">Tenis Ayakkabısı</a></li>
+                            <li><a href="#">Voleybol Ayakkabısı</a></li>
+                            <span style="color: var(--primary-color); cursor: pointer;">DAHA FAZLA GÖSTER</span>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Marka <i class="fa-solid fa-arrow-circle-down"
+                        style="color: #ff9470; "></i></div>
+                <div class="accordion-content-2">
+                    <ul>
+                        <li>Numaralı İçerik Madde 1</li>
+                        <li>Numaralı İçerik Madde 2</li>
+                        <li>Numaralı İçerik Madde 3</li>
+                    </ul>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Beden <i class="fa-solid fa-arrow-circle-down"
+                            style="color: #ff9470; "></i></div>
+                    <div class="accordion-content-2">
+                        <ul>
+                            <li>Numaralı İçerik Madde 1</li>
+                            <li>Numaralı İçerik Madde 2</li>
+                            <li>Numaralı İçerik Madde 3</li>
+                        </ul>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Cinsiyet <i class="fa-solid fa-arrow-circle-down"
+                                style="color: #ff9470; "></i></div>
+                        <div class="accordion-content-2">
+                            <ul>
+                                <li>Numaralı İçerik Madde 1</li>
+                                <li>Numaralı İçerik Madde 2</li>
+                                <li>Numaralı İçerik Madde 3</li>
+                            </ul>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Avantajl Ürünler <i class="fa-solid fa-arrow-circle-down"
+                                    style="color: #ff9470; "></i></div>
+                            <div class="accordion-content-2">
+                                <ul>
+                                    <li>Numaralı İçerik Madde 1</li>
+                                    <li>Numaralı İçerik Madde 2</li>
+                                    <li>Numaralı İçerik Madde 3</li>
+                                </ul>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">Renk <i class="fa-solid fa-arrow-circle-down"
+                                        style="color: #ff9470; "></i></div>
+                                <div class="accordion-content-2">
+                                    <ul>
+                                        <li>Numaralı İçerik Madde 1</li>
+                                        <li>Numaralı İçerik Madde 2</li>
+                                        <li>Numaralı İçerik Madde 3</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">Fiyat <i class="fa-solid fa-arrow-circle-down"
+                                            style="color: #ff9470; "></i></div>
+                                    <div class="accordion-content-2">
+                                        <ul>
+                                            <li>Numaralı İçerik Madde 1</li>
+                                            <li>Numaralı İçerik Madde 2</li>
+                                            <li>Numaralı İçerik Madde 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Kullanım Alanı <i
+                                                class="fa-solid fa-arrow-circle-down" style="color: #ff9470; "></i>
+                                        </div>
+                                        <div class="accordion-content-2">
+                                            <ul>
+                                                <li>Numaralı İçerik Madde 1</li>
+                                                <li>Numaralı İçerik Madde 2</li>
+                                                <li>Numaralı İçerik Madde 3</li>
+                                            </ul>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">Bağlama Şekli <i
+                                                    class="fa-solid fa-arrow-circle-down" style="color: #ff9470; "></i>
+                                            </div>
+                                            <div class="accordion-content-2">
+                                                <ul>
+                                                    <li>Numaralı İçerik Madde 1</li>
+                                                    <li>Numaralı İçerik Madde 2</li>
+                                                    <li>Numaralı İçerik Madde 3</li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header">Dış Materyal <i
+                                                        class="fa-solid fa-arrow-circle-down"
+                                                        style="color: #ff9470; "></i></div>
+                                                <div class="accordion-content-2">
+                                                    <ul>
+                                                        <li>Numaralı İçerik Madde 1</li>
+                                                        <li>Numaralı İçerik Madde 2</li>
+                                                        <li>Numaralı İçerik Madde 3</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <div class="accordion-header">Materyal <i
+                                                            class="fa-solid fa-arrow-circle-down"
+                                                            style="color: #ff9470; "></i></div>
+                                                    <div class="accordion-content-2">
+                                                        <ul>
+                                                            <li>Numaralı İçerik Madde 1</li>
+                                                            <li>Numaralı İçerik Madde 2</li>
+                                                            <li>Numaralı İçerik Madde 3</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <div class="accordion-header">Taban Tipi <i
+                                                                class="fa-solid fa-arrow-circle-down"
+                                                                style="color: #ff9470; "></i></div>
+                                                        <div class="accordion-content-2">
+                                                            <ul>
+                                                                <li>Numaralı İçerik Madde 1</li>
+                                                                <li>Numaralı İçerik Madde 2</li>
+                                                                <li>Numaralı İçerik Madde 3</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <div class="accordion-header">Topuk Tipi <i
+                                                                    class="fa-solid fa-arrow-circle-down"
+                                                                    style="color: #ff9470; "></i></div>
+                                                            <div class="accordion-content-2">
+                                                                <ul>
+                                                                    <li>Numaralı İçerik Madde 1</li>
+                                                                    <li>Numaralı İçerik Madde 2</li>
+                                                                    <li>Numaralı İçerik Madde 3</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                                <div class="accordion-header">Topuk Boyu <i
+                                                                        class="fa-solid fa-arrow-circle-down"
+                                                                        style="color: #ff9470; "></i></div>
+                                                                <div class="accordion-content-2">
+                                                                    <ul>
+                                                                        <li>Numaralı İçerik Madde 1</li>
+                                                                        <li>Numaralı İçerik Madde 2</li>
+                                                                        <li>Numaralı İçerik Madde 3</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="accordion-item">
+                                                                    <div class="accordion-header">Ortam <i
+                                                                            class="fa-solid fa-arrow-circle-down"
+                                                                            style="color: #ff9470; "></i></div>
+                                                                    <div class="accordion-content-2">
+                                                                        <ul>
+                                                                            <li>Numaralı İçerik Madde 1</li>
+                                                                            <li>Numaralı İçerik Madde 2</li>
+                                                                            <li>Numaralı İçerik Madde 3</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                        <div class="accordion-header">Desen
+                                                                            <i class="fa-solid fa-arrow-circle-down"
+                                                                                style="color: #ff9470; "></i>
+                                                                        </div>
+                                                                        <div class="accordion-content-2">
+                                                                            <ul>
+                                                                                <li>Numaralı İçerik Madde 1</li>
+                                                                                <li>Numaralı İçerik Madde 2</li>
+                                                                                <li>Numaralı İçerik Madde 3</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="accordion-item">
+                                                                            <div class="accordion-header">Satıcı Tipi <i
+                                                                                    class="fa-solid fa-arrow-circle-down"
+                                                                                    style="color: #ff9470; "></i></div>
+                                                                            <div class="accordion-content-2">
+                                                                                <ul>
+                                                                                    <li>Numaralı İçerik Madde 1</li>
+                                                                                    <li>Numaralı İçerik Madde 2</li>
+                                                                                    <li>Numaralı İçerik Madde 3</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="accordion-item">
+                                                                                <div class="accordion-header">Fiyat
+                                                                                    Geçmişi <i
+                                                                                        class="fa-solid fa-arrow-circle-down"
+                                                                                        style="color: #ff9470; "></i>
+                                                                                </div>
+                                                                                <div class="accordion-content-2">
+                                                                                    <ul>
+                                                                                        <li>Numaralı İçerik Madde 1</li>
+                                                                                        <li>Numaralı İçerik Madde 2</li>
+                                                                                        <li>Numaralı İçerik Madde 3</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="accordion-item">
+                                                                                    <div class="accordion-header">
+                                                                                        Astar Materyali <i
+                                                                                            class="fa-solid fa-arrow-circle-down"
+                                                                                            style="color: #ff9470; "></i>
+                                                                                    </div>
+                                                                                    <div class="accordion-content-2">
+                                                                                        <ul>
+                                                                                            <li>Numaralı İçerik Madde 1
+                                                                                            </li>
+                                                                                            <li>Numaralı İçerik Madde 2
+                                                                                            </li>
+                                                                                            <li>Numaralı İçerik Madde 3
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="accordion-item">
+                                                                                    <div class="accordion-header">
+                                                                                        Saya Materyali <i
+                                                                                            class="fa-solid fa-arrow-circle-downt"
+                                                                                            style="color: #ff9470; "></i>
+                                                                                    </div>
+                                                                                    <div class="accordion-content-2">
+                                                                                        <ul>
+                                                                                            <li>Numaralı İçerik Madde 1
+                                                                                            </li>
+                                                                                            <li>Numaralı İçerik Madde 2
+                                                                                            </li>
+                                                                                            <li>Numaralı İçerik Madde 3
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="accordion-item">
+                                                                                    <div class="accordion-header">
+                                                                                        İç Taban Materyali <i
+                                                                                            class="fa-solid fa-arrow-circle-down"
+                                                                                            style="color: #ff9470;"></i>
+                                                                                    </div>
+                                                                                    <div class="accordion-content-2">
+                                                                                        <ul>
+                                                                                            <input type="checkbox">Yeni
+                                                                                            Ürünler
+                                                                                            <input
+                                                                                                type="checkbox">Kurumsal
+                                                                                            Faturaya Uygun
+                                                                                            <input
+                                                                                                type="checkbox">Videolu
+                                                                                            Ürünler
+                                                                                            <input
+                                                                                                type="checkbox">Birlikte
+                                                                                            Al Kazan
+                                                                                        </ul>
+                                                                                    </div>
+                                                                              </div>
+ </div>    
+</div>
+   
 </body>
+
 </html>
