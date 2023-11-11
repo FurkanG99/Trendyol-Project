@@ -20,7 +20,6 @@ body{
 .content-urun-list{
     height: 100%;
     width: 20%;
-    margin-left: 100px;
 }
 
 
@@ -261,6 +260,63 @@ body{
 
 
 .accordion{
-    margin-bottom: 1000px;
+    margin-bottom: 1800px;
     left: 0;
+}
+.bottom-text{
+    width: 100%;
+    position: absolute;
+    margin-top: 2200px;
+}
+.bottomText h2 {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+}
+.bottomText h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0 5px 0;
+}
+
+.bottomText p {
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+}
+.bottomText span {
+    padding: 0 3px;
+}
+
+.brandHeaders {
+    width: 1200px;
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.brandHeaders li {
+    width: 50%;
+}
+
+.brandHeaders h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 54px;
+}
+
+.brandList-wrap {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandList {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 24px;
+}
+
+.brandList a:hover {
+    text-decoration: underline;
 }
